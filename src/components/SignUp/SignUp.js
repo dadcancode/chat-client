@@ -17,7 +17,7 @@ const SignUp = (props) => {
         if ( username === '' || password === '' || confirmPass === '') {
             setSysMsg('All fields are required');
         } else {
-            fetch(`http://localhost:5000/signUp`, {
+            fetch(`https://shrouded-depths-17947.herokuapp.com/signUp`, {
                 body: JSON.stringify({
                     username: username,
                     password: password,
