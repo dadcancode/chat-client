@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { includes } from '../../../../server/config';
 
 
 const SignUp = (props) => {
@@ -17,13 +18,16 @@ const SignUp = (props) => {
         if ( username === '' || password === '' || confirmPass === '') {
             setSysMsg('All fields are required');
         } else {
-            fetch(`https://cors-anywhere.herokuapp.com/https://shrouded-depths-17947.herokuapp.com/signUp`, {
+            fetch(`https://shrouded-depths-17947.herokuapp.com/signUp`, {
                 body: JSON.stringify({
                     username: username,
                     password: password,
                     password2: confirmPass
                 }),
                 method: "POST",
+                mode: 'cors',
+                cache: 'no-cache',
+                credentials: 'include',
                 headers: {
                     'Accept': 'application/json, text/plain, */*',
                     'Content-Type': 'application/json'
