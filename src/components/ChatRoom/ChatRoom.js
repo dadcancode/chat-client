@@ -20,7 +20,7 @@ const ChatRoom = (props) => {
     const [newRoom, setNewRoom] = useState('');
     const [socketIds, setSocketIds] = useState([]);
 
-    const ENDPOINT = 'localhost:5000';
+    const ENDPOINT = 'https://shrouded-depths-17947.herokuapp.com/';
 
     useEffect(() => {
         socket = io(ENDPOINT);
