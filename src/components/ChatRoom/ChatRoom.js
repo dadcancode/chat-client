@@ -77,7 +77,7 @@ const ChatRoom = (props) => {
         setMessages([]);
         console.log(`getRoomMsgs ran`);
         console.log(`props.tempUser.room: ${props.tempUser.room}`)
-        fetch(`http://localhost:5000/messages/${room}/${props.tempUser.signIn}`)
+        fetch(`${props.dbURL}${room}/${props.tempUser.signIn}`)
         .then(resp => resp.json())
         .then((json) => {
             console.log(json)
@@ -92,7 +92,7 @@ const ChatRoom = (props) => {
         event.preventDefault();
 
         if (message.length > 0) {
-            fetch(`http://localhost:5000/messages`, {
+            fetch(`${props.dbUrl}messages`, {
                 body: JSON.stringify({
                     senderId: props.tempUser.user._id,
                     senderName: props.tempUser.user.username,

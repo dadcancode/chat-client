@@ -15,7 +15,7 @@ const SignIn = (props) => {
 
     const onSubmit = (event) => {
         event.preventDefault();
-        fetch(`http://localhost:5000/signIn`, {
+        fetch(`${props.dbUrl}signIn`, {
             body: JSON.stringify({
                 username: userName,
                 password: passWord

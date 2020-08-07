@@ -13,7 +13,7 @@ const App = () => {
     const [view, setView] = useState('SignIn');
     const [tempUser, setTempUser] = useState({});
     const activeUsers = [];
-    const proxyurl = "https://cors-anywhere.herokuapp.com/";
+    const dbUrl = "https://shrouded-depths-17947.herokuapp.com/";
 
     const addUser = (user, userId) => {
         const alreadyLoggedIn = activeUsers.find((user) => user.user._id === userId);
@@ -29,13 +29,13 @@ const App = () => {
     const renderView = (currView) => {
         switch(currView) {
             case 'SignIn':
-                return <SignIn setView={setView} setTempUser={setTempUser} addUser={addUser}/>
+                return <SignIn setView={setView} setTempUser={setTempUser} addUser={addUser} dbUrl={dbUrl}/>
             break;
             case 'NewUser':
-                return <SignUp setView={setView} setTempUser={setTempUser} proxyurl={proxyurl}/>
+                return <SignUp setView={setView} setTempUser={setTempUser} dbUrl={dbUrl}/>
             break;
             case 'ChatRoom':
-                return <ChatRoom tempUser={tempUser} setTempUser={setTempUser}/>
+                return <ChatRoom tempUser={tempUser} setTempUser={setTempUser} dbUrl={dbUrl}/>
             break;
         }
     }
