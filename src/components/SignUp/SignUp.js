@@ -24,6 +24,7 @@ const SignUp = (props) => {
                     password: password,
                     password2: confirmPass
                 }),
+                method: 'POST',
                 headers: {
                     'Accept': 'application/json, text/plain, */*',
                     'Content-Type': 'application/json'
