@@ -27,7 +27,7 @@ const SignUp = (props) => {
                 method: "POST",
                 mode: 'cors',
                 cache: 'no-cache',
-                credentials: 'include',
+                credentials: 'omit',
                 headers: {
                     'Accept': 'application/json, text/plain, */*',
                     'Content-Type': 'application/json'
