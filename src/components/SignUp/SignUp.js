@@ -29,17 +29,17 @@ const SignUp = (props) => {
                     'Content-Type': 'application/json'
                 }
             })
-            .then(resp => console.log(resp))
-            // .then(resp => resp.json())
-            // // .then(json => {
-            //     console.log(`here is the json: ${Object.entries(json)}`)
-            //     if (json.errors) {
-            //         alert('there was an error')
-            //     } else {
-            //         props.setTempUser(json)
-            //         props.setView('ChatRoom');
-            //     }
-            // })
+            // .then(resp => console.log(resp))
+            .then(resp => resp.json())
+            .then(json => {
+                console.log(`here is the json: ${Object.entries(json)}`)
+                if (json.errors) {
+                    alert('there was an error')
+                } else {
+                    props.setTempUser(json)
+                    props.setView('ChatRoom');
+                }
+            })
         }
     }
 
