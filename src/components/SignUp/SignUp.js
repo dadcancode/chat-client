@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 
+import './SignUp.css';
 
 
 const SignUp = (props) => {
@@ -45,30 +46,32 @@ const SignUp = (props) => {
     }
 
     return(
-        <div>
-            <div>
-                <h1>Sign Up</h1>
+        <div className='signInDiv'>
+            <div className='headingDiv'>
+                <h1 className='heading'>Sign Up</h1>
             </div>
-            <form onSubmit={(event) => {
-                if (password === confirmPass) {
-                    onSubmit(event)
-                } else {
-                    setSysMsg('passwords do not match');
-                }
-            }}>
-                <div>
-                    <input type='text' placeholder='Username' onChange={(event) => setUsername(event.target.value)}/>
-                </div>
-                <div>
-                    <input type='text' placeholder='Password' onChange={(event) => setPassword(event.target.value)}/>
-                </div>
-                <div>
-                    <input type='text' placeholder='Confirm Password' onChange={(event) => setConfirmPass(event.target.value)}/>
-                </div>
-                <div>
-                    <button type='submit'>Sign Up!</button>
-                </div>
-            </form>
+            <div className='signInFormDiv'>
+                <form className='signInForm' onSubmit={(event) => {
+                    if (password === confirmPass) {
+                        onSubmit(event)
+                    } else {
+                        setSysMsg('passwords do not match');
+                    }
+                }}>
+                    <div className='signUpInputDiv'>
+                        <input className='signInInput' type='text' placeholder='Username' onChange={(event) => setUsername(event.target.value)}/>
+                    </div>
+                    <div className='signUpInputDiv'>
+                        <input className='signInInput' type='text' placeholder='Password' onChange={(event) => setPassword(event.target.value)}/>
+                    </div>
+                    <div className='signUpInputDiv'>
+                        <input className='signInInput' type='text' placeholder='Confirm Password' onChange={(event) => setConfirmPass(event.target.value)}/>
+                    </div>
+                    <div className='signUpSubmitBtn'>
+                        <button className='signInBtn' type='submit'>Sign Up!</button>
+                    </div>
+                </form>
+            </div>
         </div>
     )
 }
