@@ -25,9 +25,9 @@ const SignUp = (props) => {
                     password2: confirmPass
                 }),
                 method: "POST",
-                mode: 'no-cors',
+                mode: 'cors',
                 cache: 'no-cache',
-                // credentials: 'include',
+                credentials: 'include',
                 headers: {
                     'Accept': 'application/json, text/plain, */*',
                     'Content-Type': 'application/json'
