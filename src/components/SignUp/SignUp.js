@@ -18,7 +18,7 @@ const SignUp = (props) => {
         if ( username === '' || password === '' || confirmPass === '') {
             setSysMsg('All fields are required');
         } else {
-            fetch(`${props.dbUrl}signIn`, {
+            fetch(`${props.dbUrl}signUp`, {
                 body: JSON.stringify({
                     username: username,
                     password: password,
