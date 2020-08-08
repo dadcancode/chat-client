@@ -20,20 +20,20 @@ const RoomMessages = (props) => {
                     {props.messages.map((val) => {
                         if (val.senderName === props.tempUser.user.username) {
                             return(
-                                <div className='messageDiv outgoingMsg'>
-                                    <span>{`${val.senderName}: ${ReactEmoji.emojify(val.text)}`}</span>
+                                <div className='messageDiv'>
+                                    <span className='outgoingMsg'>{`${val.senderName}: ${ReactEmoji.emojify(val.text)}`}</span>
                                 </div>
                             )
                         } else if (val.senderName === 'admin') {
                             return(
-                                <div className='messageDiv adminMsg'>
-                                    <span>{`${val.senderName}: ${ReactEmoji.emojify(val.text)}`}</span>
+                                <div className='messageDiv'>
+                                    <span className='adminMsg'>{`${val.senderName}: ${ReactEmoji.emojify(val.text)}`}</span>
                                 </div>
                             )
                         } else {
                             return(
-                                <div className='messageDiv incomingMsg'>
-                                    <span>{`${val.senderName}: ${ReactEmoji.emojify(val.text)}`}</span>
+                                <div className='messageDiv'>
+                                    <span className='incomingMsg'>{`${val.senderName}: ${ReactEmoji.emojify(val.text)}`}</span>
                                 </div>
                             )
                         }
