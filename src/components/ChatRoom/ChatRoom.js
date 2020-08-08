@@ -167,7 +167,7 @@ const ChatRoom = (props) => {
     return (
         <div className='chatRoomOuterDiv'>
             <SideNav rooms={rooms} createRoom={createRoom} setNewRoom={setNewRoom} newRoom={newRoom} switchRoom={switchRoom} currentRoom={props.tempUser.room} updateTempUserRoom={updateTempUserRoom} getRoomMsgs={getRoomMsgs}/>
-            <RoomMessages messages={messages} />
+            <RoomMessages messages={messages} tempUser={props.tempUser} />
             {/* <button onClick={() => getRoomMsgs()}>Push</button> */}
             <ChatInput sendMessage={sendMessage} setMessage={setMessage} message={message}/>
             {/* <input type='text' value={message} onChange={(e) => setMessage(e.target.value)} onKeyPress={e => e.key === 'Enter' ? sendMessage(e) : null}/> */}

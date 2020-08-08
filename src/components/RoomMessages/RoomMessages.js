@@ -18,14 +18,25 @@ const RoomMessages = (props) => {
             <div className='messagesOuterDiv'>
                 <ScrollToBottom>
                     {props.messages.map((val) => {
-                        // const msgDivRandom = {
-                        //     backgroundColor: `rgb(${randomRGBValue()}, ${randomRGBValue()}, ${randomRGBValue()})`
-                        // }
-                        return(
-                            <div className='messageDiv'>
-                                <span>{`${val.senderName}: ${ReactEmoji.emojify(val.text)}`}</span>
-                            </div>
-                        )
+                        if (val.senderName === props.tempUser.user.username) {
+                            return(
+                                <div className='messageDiv outgoingMsg'>
+                                    <span>{`${val.senderName}: ${ReactEmoji.emojify(val.text)}`}</span>
+                                </div>
+                            )
+                        } else if (val.senderName === 'admin') {
+                            return(
+                                <div className='messageDiv adminMsg'>
+                                    <span>{`${val.senderName}: ${ReactEmoji.emojify(val.text)}`}</span>
+                                </div>
+                            )
+                        } else {
+                            return(
+                                <div className='messageDiv incomingMsg'>
+                                    <span>{`${val.senderName}: ${ReactEmoji.emojify(val.text)}`}</span>
+                                </div>
+                            )
+                        }
                     })}
                 </ScrollToBottom>
             </div>

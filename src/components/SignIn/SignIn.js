@@ -54,7 +54,7 @@ const SignIn = (props) => {
                         <input placeholder='Username' type='text' className='signInInput' onChange={(event) => setUserName(event.target.value)} />
                     </div>
                     <div className='signInInputDiv'>
-                        <input placeholder='Password' type='text' className='signInInput' onChange={(event) => setPassword(event.target.value)} />
+                        <input placeholder='Password' type='password' className='signInInput' onChange={(event) => setPassword(event.target.value)} />
                     </div>
                     <div className='signInSubmitBtn'>
                         <button className='signInBtn' type='submit'>Sign In</button>

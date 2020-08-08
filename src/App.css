@@ -5,7 +5,6 @@
     color: grey;
 }
 
-
 .appDiv {
     height: 100vh;
     background-image: url('./components/icons/photo-of-multicolored-illustration-2832382.jpg');
@@ -16,4 +15,5 @@
     flex-direction: column;
     /* justify-content: center; */
     align-items: center;
+    overflow: auto;
 }

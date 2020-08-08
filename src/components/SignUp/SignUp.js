@@ -46,11 +46,11 @@ const SignUp = (props) => {
     }
 
     return(
-        <div className='signInDiv'>
-            <div className='headingDiv'>
+        <div className='signUpDiv'>
+            <div className='signUpHeadingDiv'>
                 <h1 className='heading'>Sign Up</h1>
             </div>
-            <div className='signInFormDiv'>
+            <div className='signUpFormDiv'>
                 <form className='signInForm' onSubmit={(event) => {
                     if (password === confirmPass) {
                         onSubmit(event)
@@ -62,10 +62,10 @@ const SignUp = (props) => {
                         <input className='signInInput' type='text' placeholder='Username' onChange={(event) => setUsername(event.target.value)}/>
                     </div>
                     <div className='signUpInputDiv'>
-                        <input className='signInInput' type='text' placeholder='Password' onChange={(event) => setPassword(event.target.value)}/>
+                        <input className='signInInput' type='password' placeholder='Password' onChange={(event) => setPassword(event.target.value)}/>
                     </div>
                     <div className='signUpInputDiv'>
-                        <input className='signInInput' type='text' placeholder='Confirm Password' onChange={(event) => setConfirmPass(event.target.value)}/>
+                        <input className='signInInput' type='password' placeholder='Confirm Password' onChange={(event) => setConfirmPass(event.target.value)}/>
                     </div>
                     <div className='signUpSubmitBtn'>
                         <button className='signInBtn' type='submit'>Sign Up!</button>
