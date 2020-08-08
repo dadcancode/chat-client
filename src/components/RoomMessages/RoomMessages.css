@@ -21,17 +21,17 @@
 .outgoingMsg {
     background-color: #4A6EC1;
     color: whitesmoke;
-    align-self: flex-start;
+    justify-self: start;
 }
 
 .incomingMsg {
     background-color: #4ac162;
     color: whitesmoke;
-    align-self: flex-end;
+    justify-self: flex-end;
 }
 
 .adminMsg{
     font-size: 12pt;
     font-style: italic;
-    align-self: center;
+    justify-self: center;
 }
