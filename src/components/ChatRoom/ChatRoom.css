@@ -10,8 +10,13 @@
 }
 
 @media only screen  and (min-width : 1224px) {
-    .navAndMsgsDiv {
+    .chatRoomOuterDiv {
         flex-direction: row;
         width: 100%;
+    }
+
+    .mainDiv {
+        height: 100%;
+        width: 90%;
     }
 }
