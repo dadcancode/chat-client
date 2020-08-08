@@ -17,7 +17,7 @@
 
 .outgoingMsgDiv {
     display: flex;
-    justify-content: left;
+    justify-content: flex-start;
 }
 
 .outgoingMsg {
@@ -28,7 +28,7 @@
 
 .incomingMsgDiv {
     display: flex;
-    justify-content: right;
+    justify-content: flex-end;
 }
 
 .incomingMsg {
