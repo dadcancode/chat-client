@@ -70,8 +70,14 @@
 
     .online-div {
         width: 100%;
-        height: 50%;
+        height: 25%;
         flex-direction: column;
+    }
+
+    .online-icon {
+        height: 25%;
+        width: 25%;
+        align-self: center;
     }
 
     .activeRooms {
