@@ -8,12 +8,12 @@ const EditUser = (props) => {
 
     return (
         <div className='editUserDiv'>
-            <div className='headingDiv'>
-                <h1 className='heading'>Edit Profile</h1>
+            <div className='editHeadingDiv'>
+                <h1 className='editHeading'>Edit Profile</h1>
             </div>
             <form className='editUserForm'>
                 <div className='editUserInputDiv'>
-                    <input type='text' value={username} onChange={(e) => {
+                    <input className='editUserInput' type='text' value={username} onChange={(e) => {
                         setUsername(e.target.value)
                     }}/>
                 </div>

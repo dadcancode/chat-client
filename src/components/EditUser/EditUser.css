@@ -1,7 +1,7 @@
 .editUserDiv {
     background-color: rgba(68, 49, 98, 0.582);
     width: 80%;
-    height: 50%;
+    height: 35%;
     margin: 50% auto;
     display: flex;
     flex-direction: column;
@@ -15,3 +15,46 @@
 .editUserForm {
     height: 80%;
 }
+
+.editHeadingDiv {
+    width: 100%;
+    height: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.editHeading {
+    /* margin-top: 0; */
+    /* height: 100%; */
+    font-size: 40pt;
+    text-align: justify;
+    font-family: 'Dancing Script', cursive;
+    color: whitesmoke;
+}
+
+.editUserInputDiv {
+    height: 25%;
+}
+
+.editUserInput {
+    height: 100%;
+    width: 100%;
+    background-color: #DADADA;
+    font-family: 'Amatic SC', cursive;
+}
+
+.editUserBtnDiv{
+    height: 25%;
+    width: 90%;
+    border-radius: 3rem;;
+}
+
+.editUserBtn {
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    background-color: #DADADA;
+    font-family: 'Amatic SC', cursive;
+}
+
