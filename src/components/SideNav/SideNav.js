@@ -19,6 +19,7 @@ const SideNav = (props) => {
                 <div className='current-room'>{props.currentRoom}</div>
             </div>
             <select className='activeRooms' onChange={(event) => {
+                console.log(`target value: ${event.target.value}`)
                 props.getRoomMsgs(event.target.value)
                 // props.updateTempUserRoom(event.target.value)
                 // props.switchRoom(event);
