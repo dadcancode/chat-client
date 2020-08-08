@@ -17,10 +17,16 @@
 .chatInputBtn {
     width: 20%;
     height: 100%;
+    background-color: rgba(68, 49, 98, .5);
+    color: whitesmoke;
 }
 
 @media only screen  and (min-width : 1224px) {
     .chatInputDiv {
         height: 5%;
+    }
+
+    .chatInputBtn {
+        font-size:  25pt;
     }
 }
