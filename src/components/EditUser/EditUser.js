@@ -1,5 +1,7 @@
 import React, {useState} from 'react';
 
+import '../EditUser/EditUser.css';
+
 const EditUser = (props) => {
 
     const [username, setUsername] = useState(props.tempUser.user.username);

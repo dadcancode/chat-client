@@ -85,10 +85,10 @@
 
     .online-icon {
         height: 35%;
-        width: 25%;
+        width: 20%;
         align-self: center;
         background-color: whitesmoke;
-        border-radius: 4rem;
+        border-radius: 50%;
         padding: 2%;
     }
 
