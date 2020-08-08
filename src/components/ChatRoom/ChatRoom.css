@@ -4,3 +4,13 @@
     width:  100%;
     height: 100%;
 }
+
+.navAndMsgsDiv {
+    height: 95%;
+    display: flex;
+    flex-direction: column;
+}
+
+.chatRoomMsgDiv {
+    height: 5%;
+}
