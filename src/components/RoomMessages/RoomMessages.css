@@ -28,6 +28,7 @@
     background-color: #d8d8d8;
     color: rgba(68, 49, 98, 0.87);
     width: fit-content;
+    border-radius: 5px;
 }
 
 .incomingMsgDiv {
@@ -39,6 +40,7 @@
     background-color: rgba(68, 49, 98, 0.87);
     color: #d8d8d8;
     width: fit-content;
+    border-radius: 5px;
 }
 
 .adminMsgDiv {
@@ -50,5 +52,6 @@
     font-size: 12pt;
     font-style: italic;
     width: fit-content;
-    color: #d8d8d8;;
+    color: #d8d8d8;
+    border-radius: 5px;
 }
