@@ -77,7 +77,7 @@ const ChatRoom = (props) => {
         setMessages([]);
         console.log(`getRoomMsgs ran`);
         console.log(`props.tempUser.room: ${room}`)
-        fetch(`${props.dbUrl}${room}/${props.tempUser.signIn}`)
+        fetch(`${props.dbUrl}/messages/${room}/${props.tempUser.signIn}`)
         .then(resp => resp.json())
         .then((json) => {
             console.log(json)
