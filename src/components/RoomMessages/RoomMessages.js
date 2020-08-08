@@ -21,19 +21,19 @@ const RoomMessages = (props) => {
                         if (val.senderName === props.tempUser.user.username) {
                             return(
                                 <div className='messageDiv'>
-                                    <span className='outgoingMsg'>{`${val.senderName}: ${ReactEmoji.emojify(val.text)}`}</span>
+                                    <div className='outgoingMsg'>{`${val.senderName}: ${ReactEmoji.emojify(val.text)}`}</div>
                                 </div>
                             )
                         } else if (val.senderName === 'admin') {
                             return(
                                 <div className='messageDiv'>
-                                    <span className='adminMsg'>{`${val.senderName}: ${ReactEmoji.emojify(val.text)}`}</span>
+                                    <div className='adminMsg'>{`${val.senderName}: ${ReactEmoji.emojify(val.text)}`}</div>
                                 </div>
                             )
                         } else {
                             return(
                                 <div className='messageDiv'>
-                                    <span className='incomingMsg'>{`${val.senderName}: ${ReactEmoji.emojify(val.text)}`}</span>
+                                    <div className='incomingMsg'>{`${val.senderName}: ${ReactEmoji.emojify(val.text)}`}</div>
                                 </div>
                             )
                         }

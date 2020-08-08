@@ -19,20 +19,17 @@
 .outgoingMsg {
     background-color: #4A6EC1;
     color: whitesmoke;
-    width: 100%;
     justify-self: left;
 }
 
 .incomingMsg {
     background-color: #4ac162;
     color: whitesmoke;
-    width: 100%;
     justify-self: right;
 }
 
 .adminMsg{
     font-size: 12pt;
     font-style: italic;
-    width: 100%;
     justify-self: center;
 }
