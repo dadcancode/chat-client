@@ -80,7 +80,7 @@
         height: 15%;
         flex-direction: column;
         margin-bottom: 2%;
-        background-color: rgba(68, 49, 98, .5);
+        background-color: transparent;
     }
 
     .online-icon {
@@ -140,5 +140,10 @@
     .createRoomBtn:hover {
         background-color: whitesmoke;
         color: rgba(68, 49, 98, .9);
+    }
+
+    .createRoomInput {
+        z-index: 0;
+        height: 5%;
     }
 }
