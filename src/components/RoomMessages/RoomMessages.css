@@ -65,4 +65,8 @@
     .messagesOuterDiv {
         width: 85%;
     }
+
+    .outgoingMsg, .incomingMsg, .adminMsg {
+        padding: 1%
+    }
 }
