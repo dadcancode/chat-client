@@ -5,6 +5,10 @@
     height: 90%;
     color: whitesmoke;
     padding: 2%;
+    background-image: url('./components/icons/photo-of-multicolored-illustration-2832382.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .messageDiv {
@@ -21,8 +25,8 @@
 }
 
 .outgoingMsg {
-    background-color: #4A6EC1;
-    color: whitesmoke;
+    background-color: #d8d8d8;
+    color: rgba(68, 49, 98, 0.87);
     width: fit-content;
 }
 
@@ -32,8 +36,8 @@
 }
 
 .incomingMsg {
-    background-color: #4ac162;
-    color: whitesmoke;
+    background-color: rgba(68, 49, 98, 0.87);
+    color: #d8d8d8;
     width: fit-content;
 }
 
@@ -46,4 +50,5 @@
     font-size: 12pt;
     font-style: italic;
     width: fit-content;
+    color: #d8d8d8;;
 }

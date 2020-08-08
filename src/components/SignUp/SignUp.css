@@ -1,5 +1,5 @@
 .signUpDiv {
-    background-color: whitesmoke;
+    background-color: rgba(68, 49, 98, 0.582);
     width: 80%;
     height: 50%;
     margin: 50% auto;
@@ -42,4 +42,16 @@
     display: flex;
     justify-content: center;
     align-content: center;
+}
+
+@media only screen  and (min-width : 1224px) {
+    .signUpDiv {
+        min-height: 500px;
+        margin: 10% auto;
+        width: 30%;
+    }
+
+    .signUpFormDiv {
+        height: 60%;
+    }
 }

@@ -1,5 +1,5 @@
 .signInDiv {
-    background-color: whitesmoke;
+    background-color: rgba(68, 49, 98, 0.582);
     width: 80%;
     height: 50%;
     margin: 50% auto;
@@ -26,6 +26,8 @@
     /* height: 100%; */
     font-size: 55pt;
     text-align: justify;
+    font-family: 'Dancing Script', cursive;
+    color: whitesmoke;
 }
 
 .signInFormDiv {
@@ -83,4 +85,12 @@
     background-color: #DADADA;
     font-family: 'Amatic SC', cursive;
     font-size: 35pt;
+}
+
+@media only screen  and (min-width : 1224px) {
+    .signInDiv {
+        min-height: 300px;
+        margin: 10% auto;
+        width: 30%;
+    }
 }
