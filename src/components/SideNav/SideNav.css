@@ -71,6 +71,7 @@
     .online-div {
         width: 100%;
         height: 50%;
+        flex-direction: column;
     }
 
     .activeRooms {
