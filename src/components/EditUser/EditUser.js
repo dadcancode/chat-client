@@ -8,7 +8,7 @@ const EditUser = (props) => {
 
     const editUser = (e) => {
         e.preventDefault();
-        fetch(`${props.dbUrl}users/${props.tempUser.user.username}`, {
+        fetch(`${props.dbUrl}users/${props.tempUser.user.id}`, {
             body: JSON.stringify({
                 username: username
             }),
