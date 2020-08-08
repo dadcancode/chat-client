@@ -41,6 +41,7 @@
 .editUserInputDiv {
     height: 33.3%;
     padding-bottom: 2%;
+    margin-bottom: 3%;
 }
 
 .editUserInput {
@@ -50,12 +51,13 @@
     font-family: 'Amatic SC', cursive;
     text-align: center;
     font-size: 40pt;
+    border: none;
 }
 
 .editUserBtnDiv{
     height: 33.3%;
     width: 90%;
-    border-radius: 3rem;;
+    margin-bottom: 3%;
 }
 
 .editUserBtn {
@@ -65,5 +67,7 @@
     background-color: #DADADA;
     font-family: 'Amatic SC', cursive;
     font-size: 40pt;
+    border: none;
+    border-radius: 3rem;
 }
 
