@@ -15,7 +15,9 @@ const SideNav = (props) => {
     return (
         <div className='sideNavDiv'>
             <div className='online-div'>
-                <img className='online-icon' src={OnlineIcon}/>
+                <img className='online-icon' src={OnlineIcon} onClick={() => {
+                    props.setEditProfile(!props.editProfile)
+                }}/>
                 <div className='current-room'>{props.currentRoom}</div>
             </div>
             <select className='activeRooms' onChange={(event) => {

@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import queryString from 'query-string';
 import io from 'socket.io-client';
 
 import SideNav from '../SideNav/SideNav';
@@ -7,6 +6,7 @@ import ChatInput from '../ChatInput/ChatInput';
 import RoomMessages from '../RoomMessages/RoomMessages';
 
 import './ChatRoom.css';
+import EditUser from '../EditUser/EditUser';
 
 
 let socket;
@@ -16,9 +16,9 @@ const ChatRoom = (props) => {
     const [message, setMessage] = useState('');
     const [messages, setMessages] = useState([]);
     const [rooms, setRooms] = useState({});
-    const [room, setRoom] = useState(props.tempUser.room);
     const [newRoom, setNewRoom] = useState('');
     const [socketIds, setSocketIds] = useState([]);
+    const [editProfile, setEditProfile] = useState(false);
 
     const ENDPOINT = 'https://shrouded-depths-17947.herokuapp.com/';
 
@@ -114,12 +114,6 @@ const ChatRoom = (props) => {
         }
     }
 
-    const getRooms = () => {
-        // fetch('http://localhost:5000/getRooms')
-        // .then(resp => resp.json())
-        // .then(json => console.log(json))
-        socket.emit('getRooms')
-    }
 
 
 
@@ -166,15 +160,17 @@ const ChatRoom = (props) => {
 
     return (
         <div className='chatRoomOuterDiv'>
-            <div className='navAndMsgsDiv'>
-                <SideNav rooms={rooms} createRoom={createRoom} setNewRoom={setNewRoom} newRoom={newRoom} switchRoom={switchRoom} currentRoom={props.tempUser.room} updateTempUserRoom={updateTempUserRoom} getRoomMsgs={getRoomMsgs}/>
-                <RoomMessages messages={messages} tempUser={props.tempUser} />
-            </div>
-            <div className='chatRoomMsgDiv'>
-                <ChatInput sendMessage={sendMessage} setMessage={setMessage} message={message}/>
-            </div>
-            {/* <button onClick={() => getRoomMsgs()}>Push</button> */}
-            {/* <input type='text' value={message} onChange={(e) => setMessage(e.target.value)} onKeyPress={e => e.key === 'Enter' ? sendMessage(e) : null}/> */}
+            <SideNav rooms={rooms} createRoom={createRoom} setNewRoom={setNewRoom} newRoom={newRoom} switchRoom={switchRoom} currentRoom={props.tempUser.room} updateTempUserRoom={updateTempUserRoom} getRoomMsgs={getRoomMsgs} editProfile={editProfile} setEditProfile={setEditProfile}/>
+            {
+                editProfile ?
+                <div className='mainDiv'>
+                    <EditUser tempUser={props.tempUser}/>
+                </div> :
+                <div className='mainDiv'>
+                    <RoomMessages messages={messages} tempUser={props.tempUser} />
+                    <ChatInput sendMessage={sendMessage} setMessage={setMessage} message={message}/>
+                </div>
+            }
         </div>
     )
 }

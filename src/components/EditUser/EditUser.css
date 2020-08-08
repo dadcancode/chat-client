@@ -1,0 +1,17 @@
+.editUserDiv {
+    background-color: rgba(68, 49, 98, 0.582);
+    width: 80%;
+    height: 50%;
+    margin: 50% auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* padding: 4%; */
+    border-radius: 10px;
+    min-height: 500px;
+}
+
+.editUserForm {
+    height: 80%;
+}
