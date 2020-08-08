@@ -19,16 +19,19 @@
     background-color: #4A6EC1;
     color: whitesmoke;
     justify-self: left;
+    width: fit-content;
 }
 
 .incomingMsg {
     background-color: #4ac162;
     color: whitesmoke;
     justify-self: right;
+    width: fit-content;
 }
 
 .adminMsg{
     font-size: 12pt;
     font-style: italic;
     justify-self: center;
+    width: fit-content;
 }
