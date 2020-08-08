@@ -60,6 +60,10 @@
     padding-left: 2%;
 }
 
+.lgScreenRoomsDiv {
+    display: none;
+}
+
 @media only screen  and (min-width : 1224px) {
     .sideNavDiv {
         width: 10%;
@@ -70,19 +74,40 @@
 
     .online-div {
         width: 100%;
-        height: 25%;
+        height: 15%;
         flex-direction: column;
     }
 
     .online-icon {
-        height: 25%;
-        width: 25%;
+        height: 35%;
+        width: 35%;
         align-self: center;
     }
 
+    /* .current-room {
+
+    } */
+
+
+
     .activeRooms {
+        display: none;
+    }
+
+    .lgScreenRoomsDiv {
+        display: block;
         width: 100%;
-        height: 30%;
+        height: 75%;
+        max-height: 75%;
+        overflow: auto;
+    }
+
+    .lgScreenRoomsHeading {
+        border-bottom: 2px solid whitesmoke;
+    }
+
+    .lgScreenRoomName {
+        height: 10%;
     }
 
     .createRoomBtn {

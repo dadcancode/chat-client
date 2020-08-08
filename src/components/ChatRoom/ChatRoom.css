@@ -3,6 +3,10 @@
     flex-direction: column;
     width:  100%;
     height: 100%;
+    background-image: url('../icons/photo-of-multicolored-illustration-2832382.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .mainDiv {

@@ -33,6 +33,20 @@ const SideNav = (props) => {
                 })}
             </select>
             <button className='createRoomBtn' onClick={() => setEditMode(!editMode)}>Create Room</button>
+            <div className='lgScreenRoomsDiv'>
+                <div className='lgScreenRoomsHeading'>
+                    Rooms:
+                </div>
+                {
+                    Object.keys(props.rooms).map((val) => {
+                        return (
+                            <div className='lgScreenRoomNameDiv'>
+                                {`${val}: ${props.rooms[val]} chatting`}
+                            </div>
+                        )
+                    })
+                }
+            </div>
             { editMode === true && 
             <input 
                 className='createRoomInput'
