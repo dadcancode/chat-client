@@ -18,3 +18,9 @@
     width: 20%;
     height: 100%;
 }
+
+@media only screen  and (min-width : 1224px) {
+    .chatInputDiv {
+        height: 5%;
+    }
+}
