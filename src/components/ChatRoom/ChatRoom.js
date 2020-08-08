@@ -164,7 +164,7 @@ const ChatRoom = (props) => {
             {
                 editProfile ?
                 <div className='mainDiv'>
-                    <EditUser tempUser={props.tempUser}/>
+                    <EditUser tempUser={props.tempUser} dbUrl={props.dbUrl}/>
                 </div> :
                 <div className='mainDiv'>
                     <RoomMessages messages={messages} tempUser={props.tempUser} />
