@@ -16,7 +16,7 @@
     padding: 1% 2%;
     /* background-color: whitesmoke; */
     /* color: #4E4E4E  */
-    font-size: 20pt;
+    font-size: 15pt;
 }
 
 .outgoingMsgDiv {
@@ -28,7 +28,7 @@
     background-color: #d8d8d8;
     color: rgba(68, 49, 98, 0.87);
     width: fit-content;
-    border-radius: 15px;
+    border-radius: 3em;
     padding: 4%;
 }
 
@@ -41,7 +41,7 @@
     background-color: rgba(68, 49, 98, 0.87);
     color: #d8d8d8;
     width: fit-content;
-    border-radius: 15px;
+    border-radius: 3em;
     padding: 4%;
 }
 
@@ -55,6 +55,6 @@
     font-style: italic;
     width: fit-content;
     color: #d8d8d8;
-    border-radius: 15px;
+    border-radius: 3em;
     padding: 4%;
 }
