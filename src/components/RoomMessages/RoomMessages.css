@@ -5,6 +5,8 @@
     height: 90%;
     color: whitesmoke;
     padding: 2%;
+    display: flex;
+    flex-direction: column;
 }
 
 .messageDiv {
@@ -13,19 +15,23 @@
     /* background-color: whitesmoke; */
     /* color: #4E4E4E  */
     font-size: 20pt;
+    width: fit-content;
 }
 
 .outgoingMsg {
     background-color: #4A6EC1;
     color: whitesmoke;
+    align-self: flex-start;
 }
 
 .incomingMsg {
     background-color: #4ac162;
     color: whitesmoke;
+    align-self: flex-end;
 }
 
 .adminMsg{
     font-size: 12pt;
     font-style: italic;
+    align-self: center;
 }
