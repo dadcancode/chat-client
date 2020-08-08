@@ -33,6 +33,16 @@ const SideNav = (props) => {
                 })}
             </select>
             <button className='createRoomBtn' onClick={() => setEditMode(!editMode)}>Create Room</button>
+            { editMode === true && 
+            <input 
+                className='createRoomInput'
+                type='text'
+                value={props.newRoom}
+                onChange={(e) => props.setNewRoom(e.target.value)}
+                placeholder='Add Room'
+                onKeyPress={e => e.key === 'Enter' ? processSubmit(e) : null}
+                />
+            }
             <div className='lgScreenRoomsDiv'>
                 <div className='lgScreenRoomsHeading'>
                     Rooms:
@@ -47,16 +57,6 @@ const SideNav = (props) => {
                     })
                 }
             </div>
-            { editMode === true && 
-            <input 
-                className='createRoomInput'
-                type='text'
-                value={props.newRoom}
-                onChange={(e) => props.setNewRoom(e.target.value)}
-                placeholder='Add Room'
-                onKeyPress={e => e.key === 'Enter' ? processSubmit(e) : null}
-                />
-            }
         </div>
     )
 }
