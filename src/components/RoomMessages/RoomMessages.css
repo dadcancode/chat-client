@@ -26,7 +26,7 @@
 }
 
 .outgoingMsg {
-    background-color: #d8d8d8;
+    background-color: whitesmoke;
     color: rgba(68, 49, 98, 0.87);
     width: fit-content;
     border-radius: 3em;
@@ -40,7 +40,7 @@
 
 .incomingMsg {
     background-color: rgba(68, 49, 98, 0.87);
-    color: #d8d8d8;
+    color: whitesmoke;
     width: fit-content;
     border-radius: 3em;
     padding: 4%;
@@ -55,7 +55,8 @@
     font-size: 12pt;
     font-style: italic;
     width: fit-content;
-    color: #d8d8d8;
+    color: whitesmoke;
     border-radius: 3em;
     padding: 4%;
+    font-weight: bolder;
 }
