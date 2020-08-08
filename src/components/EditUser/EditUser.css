@@ -9,11 +9,16 @@
     align-items: center;
     /* padding: 4%; */
     border-radius: 10px;
-    min-height: 500px;
+    min-height: 300px;
 }
 
 .editUserForm {
-    height: 80%;
+    height: 75%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .editHeadingDiv {
@@ -34,7 +39,8 @@
 }
 
 .editUserInputDiv {
-    height: 25%;
+    height: 33.3%;
+    padding-bottom: 2%;
 }
 
 .editUserInput {
@@ -42,10 +48,12 @@
     width: 100%;
     background-color: #DADADA;
     font-family: 'Amatic SC', cursive;
+    text-align: center;
+    font-size: 40pt;
 }
 
 .editUserBtnDiv{
-    height: 25%;
+    height: 33.3%;
     width: 90%;
     border-radius: 3rem;;
 }
@@ -56,5 +64,6 @@
     text-align: center;
     background-color: #DADADA;
     font-family: 'Amatic SC', cursive;
+    font-size: 40pt;
 }
 
